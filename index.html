@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>فحم كوم</title>
+	<meta charset="utf-8">
+    <link rel="icon" href="img/icon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--style css-->
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+    
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    
+<!---fontawesome--->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/all.css">
+
+<!--bootstrap-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+ 
+    
+<!---owl-carousel---->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    
+    
+<!----google-fonts---->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+<!--jquery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<!--java scripts-->
+	<script src="js/myScript.js"></script>
+    <script type="text/javascript" src="js/multi-animated-counter.js"></script>
+
+    
+</head>
+
+
+
+<body>
+	<div class="main-container">
+    <div class="hero-section">
+	<header>
+       <nav id="myNavbar" class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <button id="toggle-btn" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img class="logo" src="img/logo.png"></a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                
+             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                              <a class="nav-link" href="index.html">الرئيسية</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="about.html">نبذة عنا</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    خدماتنا
+                                  </a>
+                                  <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="services.html">تصفح الخدمات</a></li>
+                                    <li><a class="dropdown-item" href="request-service.html">طلب خدمة</a></li>
+                                  </ul>
+                                </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                الفحم
+                              </a>
+                              <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" href="products.html">جميع منتجات الفحم</a></li>
+                                <li><a class="dropdown-item" href="#">لوريم ايبسم</a></li>
+                              </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                الحطب
+                              </a>
+                              <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" href="products.html">جميع منتجات الفحم</a></li>
+                                <li><a class="dropdown-item" href="#">لوريم ايبسم</a></li>
+                              </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                مستلزمات الرحلات
+                              </a>
+                              <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" href="products.html">جميع مستلزمات الرحلات</a></li>
+                                <li><a class="dropdown-item" href="#">لوريم ايبسم</a></li>
+                              </ul>
+                            </li>
+                              <li class="nav-item">
+                              <a class="nav-link" href="contact-us.html">تواصل معنا</a>
+                            </li>
+                          </ul>
+                        <div class="navbar-icons">
+                            <div class="search-container">
+                              <form action="/search" method="get">
+                                <input class="search" id="searchleft" type="search" name="q" placeholder="ابحث عن....">
+                                <label class="button searchbutton" for="searchleft">                                
+                                    <img src="img/search-icon.png">
+                                  </label>
+                              </form>
+                            </div>
+                            <a class="navbar-icon-inner" href="cart.html">
+                                <img src="img/cart-icon.png">
+                            </a> 
+                            <a class="navbar-icon-inner" href="account.html">
+                                <img src="img/account-icon.png">
+                            </a>    
+                        </div>
+            </div>
+          </div>
+        </nav>
+	</header>
+        
+    <div class="hero-section-inner1">
+        <div class="container-fluid">
+            <div class="section1">
+             <div class="owl-one owl-carousel owl-theme owl-container">
+                <div class="item">
+                    <img src="img/hero-section-slider-img.png">
+                    <div class="slider-describtion">
+                    مختصين في بيع الفحم النقي الطبيعي و ملحقاته نمتلك التفرد وسنظل دائما كذلك
+                    </div>
+                </div> 
+                <div class="item">
+                     <img src="img/hero-section-slider-img2.jpeg">
+                    <div class="slider-describtion">
+                    مختصين في بيع الفحم النقي الطبيعي و ملحقاته نمتلك التفرد وسنظل دائما كذلك
+                    </div>
+                </div> 
+                <div class="item">
+                     <img src="img/hero-section-slider-img3.jpeg">
+                    <div class="slider-describtion">
+                    مختصين في بيع الفحم النقي الطبيعي و ملحقاته نمتلك التفرد وسنظل دائما كذلك
+                    </div>
+                </div>   
+            </div>
+            </div>
+        </div>
+    </div>
+        
+    <div class="hero-section-inner2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 about-text-wrap">
+                    <h1 class="title title-right">
+                        <img class="title-before" src="img/titles-before-icon.png">
+                        نبذة عنا
+                    </h1>
+                    <p class="p-text1">
+                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.<br>
+                    إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
+                    </p> 
+                    <p class="p-text1">
+                    ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.
+                    </p>
+                    <p class="p-text1 p-blue">
+                    هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ، غير منظم، غير منسق، أو حتى غير مفهوم. لأنه مازال نصاً بديلاً ومؤقتاً.                    
+                    </p>
+                    
+                </div>
+                <div class="col-lg-5 about-img-wrap">
+                    <div class="img-container">
+                        <img src="img/about-section-img.png">
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+        
+    </div>
+        
+     <div class="products-section section-padding">
+        <div class="container">
+            <div class="row">
+                 <h1 class="title title-center">
+                        <img class="title-before" src="img/titles-before-icon.png">
+                        منتجاتنا
+                </h1>
+                <div class="product-slider-wrap">
+                    <div class="owl-two owl-carousel owl-theme owl-container">
+                        <div class="item"> 
+                            <div class="product-item">
+                                 <a href="single-product.html">
+                                <div class="product-img">
+                                    <img src="img/product-slider-img2.png">
+                                </div>
+                                     <h6 class="product-name">مجموعة 2 بكت فحم الجود الذهبي سريع الاشتعال 40 قرص جامبو XL</h6></a>
+                                <p class="product-type-title">
+                                      نوع المنتج
+                                    </p>
+                                <div class="product-type">
+                                    <label class="radio"> 
+                                        <input type="radio" name="product-type" value="piece" > 
+                                        <span>قطعة</span> 
+                                    </label> 
+                                    <label class="radio"> 
+                                        <input type="radio" name="product-type" value="dozen"> 
+                                        <span>دستة</span> 
+                                    </label> 
+                                    <label class="radio"> 
+                                        <input type="radio" name="product-type" value="box"> 
+                                        <span>علبة</span> 
+                                    </label>
+                                </div>
+                                <div class="product-input">
+                                    <p class="product-price">42.61 ر.س</p>
+                                    <div class="product-add-quantity">
+                                        <div id="field1">
+                                            <button type="button" id="sub" class="sub">-</button>
+                                            <input class="quantity-number" type="number" id="1" value="1" min="1" max="">
+                                            <button type="button" id="add" class="add">+</button>
+                                        </div>
+                                        <a class="btn add-to-cart-btn">
+<!--                                            <img src="img/add-cart-icon.png">-->
+                                          <i class="fa-solid fa-cart-plus basket-add"></i>
+                                            <p class="add-cart-p">اضف الى السلة</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                        <div class="item"> 
+                            <div class="product-item">
+                                <a href="single-product.html">
+                                <div class="product-img">
+                                    <img src="img/product-slider-img3.png">
+                                </div>
+                                    <h6 class="product-name">مجموعة 2 بكت فحم الجود الذهبي سريع الاشتعال 40 قرص جامبو XL</h6></a>
+                                 <p class="product-type-title">
+                                      نوع المنتج
+                                    </p>
+                                <div class="product-type">
+                                    <label class="radio"> 
+                                        <input type="radio" name="product-type2" value="piece" > 
+                                        <span>قطعة</span> 
+                                    </label> 
+                                    <label class="radio"> 
+                                        <input type="radio" name="product-type2" value="dozen"> 
+                                        <span>دستة</span> 
+                                    </label> 
+                                    <label class="radio"> 
+                                        <input type="radio" name="product-type2" value="box"> 
+                                        <span>علبة</span> 
+                                    </label>
+                                </div>
+                                <div class="product-input">
+                                    <p class="product-price">42.61 ر.س</p>
+                                    <div class="product-add-quantity">
+                                        <div id="field1">
+                                            <button type="button" id="sub" class="sub">-</button>
+                                            <input class="quantity-number" type="number" id="1" value="1" min="1" max="">
+                                            <button type="button" id="add" class="add">+</button>
+                                        </div>
+                                        <a class="btn add-to-cart-btn">
+<!--                                            <img src="img/add-cart-icon.png">-->
+                                          <i class="fa-solid fa-cart-plus basket-add"></i>
+                                            <p class="add-cart-p">اضف الى السلة</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>  
+                        <div class="item"> 
+                            <div class="product-item">
+                                <a href="single-product.html">
+                                <div class="product-img">
+                                    <img src="img/product-slider-img1.png">
+                                </div>
+                                    <h6 class="product-name">مجموعة 2 بكت فحم الجود الذهبي سريع الاشتعال 40 قرص جامبو XL</h6></a>
+                                <p class="product-type-title">
+                                      نوع المنتج
+                                    </p>
+                                <div class="product-type">
+                                    <label class="radio"> 
+                                        <input type="radio" name="product-type3" value="piece" > 
+                                        <span>قطعة</span> 
+                                    </label> 
+                                    <label class="radio"> 
+                                        <input type="radio" name="product-type3" value="dozen"> 
+                                        <span>دستة</span> 
+                                    </label> 
+                                    <label class="radio"> 
+                                        <input type="radio" name="product-type3" value="box"> 
+                                        <span>علبة</span> 
+                                    </label>
+                                </div>
+                                <div class="product-input">
+                                    <p class="product-price">42.61 ر.س</p>
+                                    <div class="product-add-quantity">
+                                        <div id="field1">
+                                            <button type="button" id="sub" class="sub">-</button>
+                                            <input class="quantity-number" type="number" id="1" value="1" min="1" max="">
+                                            <button type="button" id="add" class="add">+</button>
+                                        </div>
+                                        <a class="btn add-to-cart-btn">
+<!--                                            <img src="img/add-cart-icon.png">-->
+                                          <i class="fa-solid fa-cart-plus basket-add"></i>
+                                            <p class="add-cart-p">اضف الى السلة</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                       
+                        </div> 
+                        <div class="item"> 
+                            <div class="product-item">
+                                <a href="single-product.html">
+                                <div class="product-img">
+                                    <img src="img/product-slider-img3.png">
+                                </div>
+                                    <h6 class="product-name">مجموعة 2 بكت فحم الجود الذهبي سريع الاشتعال 40 قرص جامبو XL</h6></a>
+                                <p class="product-type-title">
+                                      نوع المنتج
+                                    </p>
+                                <div class="product-type">
+                                    <label class="radio"> 
+                                        <input type="radio" name="product-type4" value="piece" > 
+                                        <span>قطعة</span> 
+                                    </label> 
+                                    <label class="radio"> 
+                                        <input type="radio" name="product-type4" value="dozen"> 
+                                        <span>دستة</span> 
+                                    </label> 
+                                    <label class="radio"> 
+                                        <input type="radio" name="product-type4" value="box"> 
+                                        <span>علبة</span> 
+                                    </label>
+                                </div>
+                                <div class="product-input">
+                                    <p class="product-price">42.61 ر.س</p>
+                                    <div class="product-add-quantity">
+                                        <div id="field1">
+                                            <button type="button" id="sub" class="sub">-</button>
+                                            <input class="quantity-number" type="number" id="1" value="1" min="1" max="">
+                                            <button type="button" id="add" class="add">+</button>
+                                        </div>
+                                        <a class="btn add-to-cart-btn">
+<!--                                            <img src="img/add-cart-icon.png">-->
+                                          <i class="fa-solid fa-cart-plus basket-add"></i>
+                                            <p class="add-cart-p">اضف الى السلة</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                        <div class="item"> 
+                            <div class="product-item">
+                                <a href="single-product.html">
+                                <div class="product-img">
+                                    <img src="img/product-slider-img2.png">
+                                </div>
+                                    <h6 class="product-name">مجموعة 2 بكت فحم الجود الذهبي سريع الاشتعال 40 قرص جامبو XL</h6></a>
+                                <p class="product-type-title">
+                                      نوع المنتج
+                                    </p>
+                                <div class="product-type">
+                                    <label class="radio"> 
+                                        <input type="radio" name="product-type5" value="piece" > 
+                                        <span>قطعة</span> 
+                                    </label> 
+                                    <label class="radio"> 
+                                        <input type="radio" name="product-type5" value="dozen"> 
+                                        <span>دستة</span> 
+                                    </label> 
+                                    <label class="radio"> 
+                                        <input type="radio" name="product-type5" value="box"> 
+                                        <span>علبة</span> 
+                                    </label>
+                                </div>
+                                <div class="product-input">
+                                    <p class="product-price">42.61 ر.س</p>
+                                    <div class="product-add-quantity">
+                                        <div id="field1">
+                                            <button type="button" id="sub" class="sub">-</button>
+                                            <input class="quantity-number" type="number" id="1" value="1" min="1" max="">
+                                            <button type="button" id="add" class="add">+</button>
+                                        </div>
+                                        <a class="btn add-to-cart-btn">
+<!--                                            <img src="img/add-cart-icon.png">-->
+                                          <i class="fa-solid fa-cart-plus basket-add"></i>
+                                            <p class="add-cart-p">اضف الى السلة</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>  
+                        <div class="item"> 
+                            <div class="product-item">
+                                <a href="single-product.html">
+                                <div class="product-img">
+                                    <img src="img/product-slider-img1.png">
+                                </div>
+                                    <h6 class="product-name">مجموعة 2 بكت فحم الجود الذهبي سريع الاشتعال 40 قرص جامبو XL</h6></a>
+                                <p class="product-type-title">
+                                      نوع المنتج
+                                    </p>
+                                <div class="product-type">
+                                    <label class="radio"> 
+                                        <input type="radio" name="product-type6" value="piece" > 
+                                        <span>قطعة</span> 
+                                    </label> 
+                                    <label class="radio"> 
+                                        <input type="radio" name="product-type6" value="dozen"> 
+                                        <span>دستة</span> 
+                                    </label> 
+                                    <label class="radio"> 
+                                        <input type="radio" name="product-type6" value="box"> 
+                                        <span>علبة</span> 
+                                    </label>
+                                </div>
+                                <div class="product-input">
+                                    <p class="product-price">42.61 ر.س</p>
+                                    <div class="product-add-quantity">
+                                        <div id="field1">
+                                            <button type="button" id="sub" class="sub">-</button>
+                                            <input class="quantity-number" type="number" id="1" value="1" min="1" max="">
+                                            <button type="button" id="add" class="add">+</button>
+                                        </div>
+                                        <a class="btn add-to-cart-btn">
+<!--                                            <img src="img/add-cart-icon.png">-->
+                                          <i class="fa-solid fa-cart-plus basket-add"></i>
+                                            <p class="add-cart-p">اضف الى السلة</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                       
+                        </div>  
+                    </div>
+                </div>
+            </div>
+         </div>    
+    </div>   
+        
+        
+    <div class="counter-section section-padding">
+    <div class="container">
+            <div class="row">
+                 <h1 class="title title-center white-title">
+                        <img class="title-before" src="img/titles-before-icon-blue.png">
+                        فحمكم في ارقام
+                </h1>
+                <div class="counter-wrap">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="counter-div">
+                            <img class="counter-icon" src="img/counter-icon1.png">
+                            <div id="counters_1">
+                          <div class="counter" 
+                               data-TargetNum="145"
+                               data-Easing="linear">
+                          </div>
+                        </div>
+                        <p class="counter-text">داعم وشريك</p>
+                        </div>
+                    </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="counter-div">
+                            <img class="counter-icon" src="img/counter-icon2.png">
+                            <div id="counters_2">
+                          <div class="counter" 
+                               data-TargetNum="500"
+                               data-Easing="linear">
+                          </div>
+                        </div>
+                        <p class="counter-text">منتج</p>
+                        </div>
+                    </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="counter-div">
+                            <img class="counter-icon" src="img/counter-icon3.png">
+                            <div id="counters_3">
+                          <div class="counter" 
+                               data-TargetNum="50"
+                               data-Easing="linear">
+                          </div>
+                        </div>
+                        <p class="counter-text">خدمة</p>
+                        </div>
+                    </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="counter-div">
+                            <img class="counter-icon" src="img/counter-icon4.png">
+                            <div id="counters_4">
+                          <div class="counter" 
+                               data-TargetNum="12"
+                               data-Easing="linear">
+                          </div>
+                        </div>
+                        <p class="counter-text">عام من الخبرة</p>
+                        </div>
+                    </div>
+                        
+                    </div>
+                </div>
+        </div>
+    </div>    
+    </div>
+        
+        
+    <div class="how-to-order section-padding">
+    <div class="container">
+            <div class="row">
+                 <h1 class="title title-center">
+                        <img class="title-before" src="img/titles-before-icon.png">
+                        آلية الطلب
+                </h1>
+                <img class="how-to-order-img" src="img/order-img.png">
+        </div>
+    </div>
+    </div>
+        
+        
+    <div class="footer section-padding">
+        <div class="container">
+            <div class="row footer-inner">
+                <div class="col-lg-5 col-md-6">
+                    <p class="p-footer">نبذة عنا </p>
+                    <p class="p-footer">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                    <br>
+                    إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                     <p class="p-footer">تواصل معنا</p>
+                    <a class="footer-link" href="tel:000000000">
+                    <i class="fa-solid fa-phone-volume"></i>
+                     000000000   
+                    </a>
+                    <a class="footer-link" href="mailto:Info@fahmkom.org">
+                    <i class="fa-solid fa-envelope"></i>
+                     Info@fahmkom.org   
+                    </a>
+                    <a class="footer-link" href="www.@fahmkom.org">
+                    <i class="fa-solid fa-globe"></i>
+                     www.@fahmkom.org   
+                    </a>
+                
+                <div class="social-media-icons">
+                            <a class="grow" href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a class="grow" href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                            <a class="grow" href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a class="grow" href="#"><i class="fa-brands fa-youtube"></i></a>
+                            <a class="grow" href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                </div>
+                <div class="col-lg-4 col-md-6 footer-img-wrap">
+                    <img class="footer-img" src="img/footer-img2.png">
+                </div>
+            </div>
+            
+            <div class="row">
+            
+            <div class="footer-credits">
+               <a href="https://alliance-sa.com/index_ar">
+                    جميع الحقوق محفوظة 2022 - تصميم وبرمجة تحالف الرؤى
+                </a>
+            </div>
+            </div>
+        </div>
+        
+    </div>
+    
+     
+    </div>
+<!----end of main container----->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+$('.owl-one').owlCarousel({
+    center: true,
+    loop:true,
+    margin:0,
+    autoplay:true,
+    autoplayTimeout:5000,
+    nav:true,
+    dots:false,
+    rtl:true,
+    navText:["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1120:{
+            items:1
+        }
+    }
+})
+</script>
+<script>
+$('.owl-two').owlCarousel({
+    center: false,
+    loop:true,
+    autoplayHoverPause:true,
+    margin:0,
+    autoplay:true,
+    autoplayTimeout:5000,
+    nav:true,
+    dots:false,
+    rtl:true,
+    navText:["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1120:{
+            items:3
+        }
+    }
+})
+</script>
+<script>
+ $(".add-to-cart-btn").click(function () {
+            $(this).find(".add-cart-p").text(function(i, v){
+               return v === 'تمت الاضافة إلى السلة' ? 'أضف إلى السلة' : 'تمت الاضافة إلى السلة'
+            })
+        });
+</script>
+</body>
+</html>
